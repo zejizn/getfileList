@@ -31,7 +31,7 @@ filelist = getFileList(fileName="filename",fileExtension="txt",start=".",exclude
 import os
 import re
 
-def getFileList(fileName,fileExtension,start = os.path.expanduser("~"),exclude:str = "まあこんな文字列を含むファイル名やパスがあるはずなかろう",showFile = True):
+def getfileList(fileName,fileExtension,start = os.path.expanduser("~"),exclude:str = "まあこんな文字列を含むファイル名やパスがあるはずなかろう",showFile = True):
     pthList = []
     #n = 0
     for curDir, dirs,files in os.walk(start):
