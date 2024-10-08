@@ -1,0 +1,57 @@
+/*wkhtmltopdfでflexするために必要*/
+* {
+-webkit-box-sizing: border-box;
+}
+.flex {
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+}
+.flex > div {
+-webkit-box-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}
+.flex > div:last-child {
+margin-right: 0;
+}
+/*ここまでwkhtmltopdfのため*/
+.right {
+    width: 50%;
+    border-left: 0.5px dashed #000000;
+}
+
+.left {
+    width: 50%;
+}
+
+div{
+    font-family: serif;
+}
+
+.title{
+    font-size: 22px;
+}
+
+body {
+    padding: 3%;
+    /*column-count: 2;*/
+}
+
+ol,ul {
+    line-height: 360%;
+}
+
+.japan{
+    font-size: 12.5px;
+}
+.eng{
+    font-size: 14px;
+}
+table{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+@page {size:landscape;}
